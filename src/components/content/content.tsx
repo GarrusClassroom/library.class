@@ -11,7 +11,7 @@ type ContentProps = {
 };
 
 export const Content = ({ menuView }: ContentProps) => (
-    <main>
+    <main data-test-id='content-table'>
         <ul
             className={classNames(
                 menuView === MenuViewEnum.window ? styles.viewWindow : styles.viewList,

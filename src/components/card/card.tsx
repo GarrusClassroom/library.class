@@ -67,7 +67,7 @@ export const Card = ({
             }
             key={id}
         >
-            <li className={classNameCard('card')}>
+            <li className={classNameCard('card')} data-test-id='content-card'>
                 <img src={img} alt={title} className={classNameCard('cardImg')} />
                 <div className={classNameCard('rating')}>
                     {rating ? (

@@ -9,6 +9,7 @@ export type MenyBurgerProps = {
 
 export const ButtonMenuBurger = ({ isButtonState, setButtonState }: MenyBurgerProps) => (
     <button
+        data-test-id='burger-menu-button'
         className={styles.buttonMenuBurger}
         onClick={() => {
             setButtonState(!isButtonState);

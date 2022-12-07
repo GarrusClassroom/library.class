@@ -55,6 +55,7 @@ export const Navigation = ({
                 />
             </NavLink>
             <div
+                data-test-id='nav-menu'
                 className={classNames(
                     styles.books,
                     burgerMenuNavigation && styles.booksBurgerMenu,
@@ -83,6 +84,7 @@ export const Navigation = ({
                     {NAV_MENU_LIST.map(({ name, category, id }) => (
                         <li key={id}>
                             <NavLink
+                                data-test-id='nav-item'
                                 to={`${NAV_MENU_MAIN.books.path}/${category}`}
                                 className={({ isActive }) =>
                                     isActive

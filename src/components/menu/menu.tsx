@@ -22,7 +22,10 @@ export const Menu = ({ menuView, setMenuView }: MenyProps) => {
     const [isSearhView, setSearhView] = useState(true);
 
     return (
-        <div className={classNames(styles.menu, !isSearhView && styles.menuSearh)}>
+        <div
+            className={classNames(styles.menu, !isSearhView && styles.menuSearh)}
+            data-test-id='menu'
+        >
             <div
                 className={classNames(
                     styles.searchSortBlock,
