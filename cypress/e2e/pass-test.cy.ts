@@ -25,4 +25,9 @@ describe('Библилтека', () => {
     cy.get('[data-test-id="burger-menu-button"]').should('be.visible').click();
     cy.contains('Витрина книг');
   });
+  it('проверка бургера', () => {
+    cy.viewport(500, 800);
+    cy.get('[data-test-id="burger-menu-button"]').should('be.visible').click();
+    cy.contains('Витрина книг');
+  });
 });
