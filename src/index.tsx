@@ -11,5 +11,10 @@ import 'swiper/css/thumbs';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-root.render(<div>Hello world!!!</div>);
+root.render(
+    <div>
+        <div>Hello world!!!</div>
+        <div>sprint 2</div>
+    </div>,
+);
 reportWebVitals();

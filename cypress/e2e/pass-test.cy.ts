@@ -7,5 +7,8 @@ describe('Библиjтека', () => {
   it('Открытие страницы', () => {
     cy.contains('Тест пройден');
   });
+  it('2й тест', () => {
+    cy.contains('sprint 2 success');
+  });
 
 });
